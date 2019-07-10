@@ -18,4 +18,6 @@
 extern Adafruit_SSD1306 display;
 extern SdFat sd;
 
+float adcToVoltage(short adc);
+
 #endif
