@@ -15,9 +15,10 @@
 #define SPI_SPEED SD_SCK_MHZ(18)
 #define SD_CS PA4
 
+// I don't like extern idk ;p 
 extern Adafruit_SSD1306 display;
 extern SdFat sd;
 
-float adcToVoltage(short adc);
+float adcToVoltage(float adc); // cast to float
 
 #endif

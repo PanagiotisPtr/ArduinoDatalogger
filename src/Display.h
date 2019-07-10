@@ -4,7 +4,9 @@
 
 namespace Display {
     void displayHeading(char* header, char* text);
-    void displayDatalogger(bool running, char* fileName, char* mode, short ch1, short ch2, byte percentage);
+    // A bit too many parameters. Would be good if there was a way to reduce them.
+    void displayDatalogger(bool running, const char* fileName, 
+                           const char* mode, short ch1, short ch2, byte percentage);
 }
 
 #endif
